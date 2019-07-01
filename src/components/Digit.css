@@ -1,0 +1,142 @@
+.digit {
+    width: 100px;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+  }
+  .digit span {
+    position: absolute;
+    background-color: #555;
+    transition: opacity 0.5s;
+  }
+  
+  .digit span::before,
+  .digit span::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: "";
+    border-style: solid;
+  }
+  .digit .d1 {
+    width: 52px;
+    height: 20px;
+    top: 0px;
+    left: 24px;
+  }
+  .d1::before {
+    left: -20px;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #555 transparent transparent;
+  }
+  .d1::after {
+    left: 52px;
+    border-width: 20px 20px 0 0;
+    border-color: #555 transparent transparent transparent;
+  }
+  .digit .d2 {
+    /* opacity: 0.5; */
+    width: 52px;
+    height: 24px;
+    top: 82px;
+    left: 24px;
+  }
+  .d2::before {
+    left: -20px;
+    border-width: 12px 20px 12px 0;
+    border-color: transparent #555 transparent transparent;
+  }
+  .d2::after {
+    left: 52px;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent #555;
+  }
+  .digit .d3 {
+    width: 52px;
+    height: 20px;
+    top: 168px;
+    left: 24px;
+  }
+  .d3::before {
+    left: -20px;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #555 transparent;
+  }
+  .d3::after {
+    left: 52px;
+    border-width: 20px 0 0 20px;
+    border-color: transparent transparent transparent #555;
+  }
+  .digit .d4 {
+    width: 20px;
+    height: 52px;
+    top: 22px;
+    left: 0px;
+  }
+  .d4::before {
+    top: -20px;
+    left: 0px;
+    border-width: 20px 0 0 20px;
+    border-color: transparent transparent transparent #555;
+  }
+  .d4::after {
+    left: 0px;
+    top: 52px;
+    border-width: 20px 20px 0 0;
+    border-color: #555 transparent transparent transparent;
+  }
+  .digit .d5 {
+    width: 20px;
+    height: 52px;
+    top: 114px;
+    left: 0px;
+  }
+  .d5::before {
+    top: -20px;
+    left: 0px;
+    border-width: 20px 0 0 20px;
+    border-color: transparent transparent transparent #555;
+  }
+  .d5::after {
+    left: 0px;
+    top: 52px;
+    border-width: 20px 20px 0 0;
+    border-color: #555 transparent transparent transparent;
+  }
+  .digit .d6 {
+    width: 20px;
+    height: 52px;
+    top: 22px;
+    left: 80px;
+  }
+  .d6::before {
+    top: -20px;
+    left: 0px;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #555 transparent;
+  }
+  .d6::after {
+    left: 0px;
+    top: 52px;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #555 transparent transparent;
+  }
+  .digit .d7 {
+    width: 20px;
+    height: 52px;
+    top: 114px;
+    left: 80px;
+  }
+  .d7::before {
+    top: -20px;
+    left: 0px;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #555 transparent;
+  }
+  .d7::after {
+    left: 0px;
+    top: 52px;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #555 transparent transparent;
+  }
+  

@@ -1,0 +1,75 @@
+.colon {
+  width: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.colon span {
+  position: absolute;
+  background-color: #555;
+}
+
+.colon .c1 {
+  width: 20px;
+  height: 20px;
+  top: 65px;
+  left: 10px;
+}
+
+.colon .c2 {
+  width: 20px;
+  height: 20px;
+  top: 100px;
+  left: 10px;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.colon span {
+  -webkit-animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 1s infinite;
+  -o-animation: flickerAnimation 1s infinite;
+  animation: flickerAnimation 1s infinite;
+}
