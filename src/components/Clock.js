@@ -15,7 +15,7 @@ class Clock extends Component {
   }
 
   componentDidMount() {
-    setInterval(this.setTime, 3000);
+    setInterval(this.setTime, 1000);
   }
 
   setTime() {
@@ -28,7 +28,7 @@ class Clock extends Component {
   }
 
   checkAlarmTime(time) {
-    //check if props not null or isset
+    //check if props isset or not null 
     let alarmTime = this.props.alarmTime;
 
     if (time.hours === alarmTime.hours && time.minutes === alarmTime.minutes) {
